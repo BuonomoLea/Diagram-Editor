@@ -3,6 +3,9 @@
 Éditeur de diagrammes léger pour structurer ses idées.  
 Création de nœuds, drag & drop, édition du contenu textuel, liens automatiques.
 
+---
+![Aperçu de l’éditeur](assets/diagramEditor.webp)
+
 ## Sommaire
 - Stack  
 - Avancement  
