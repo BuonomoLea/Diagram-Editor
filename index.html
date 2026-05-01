@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Créez des diagrammes à l'aide de noeuds dans un éditeur visuel simple et fluide.">
+    
+    <link rel="manifest" href="./manifest.json">
+    <meta name="theme-color" content="#FFFFFF">
+
+
+    <link rel="icon" type="image/webp" href="./assets/icon.webp">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js" defer></script>
+
+    <title>Éditeur de diagrammes</title>    
+</head>
+<body>
+    <div class="workspace" id="workspace">
+        <svg class="svg-layer" id="svg-layer" aria-hidden="true"></svg>
+        
+        <!-- Card Node -->
+        <div class="flow-node" id="node-root">
+            <div class="node-header">
+                <div class="editable editable-title" contenteditable="true" aria-label="Titre du nœud">START</div>
+            </div>
+            <div class="node-body editable" contenteditable="true" aria-label="Contenu du nœud">Point de départ</div>
+            <button type="button" class="add-node-btn" aria-label="Ajouter un nœud enfant">+</button>
+        </div>
+    </div>
+</body>
+</html>
